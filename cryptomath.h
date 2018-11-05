@@ -21,12 +21,12 @@ char * chgcoe(char *s1,char *s2);//欧几里得除法单步
 char * Euccoe(char *s1,char *s2);//广义欧几里得除法 s2a * s1 + s2b * s2 = 1 
 char * inver(char *s1,char *s2);//返回0为没有逆元 ，否则返回s1 mod s2的逆元
 
-char* retback(char *s1) {
+char* retback(char *s1) {   
 	//此函数用于将字符串顺序颠倒 
 	char sret[MAXLEN];
 	int i = 0;
 	for (; i < strlen(s1); i++)
-		sret[i] = s1[strlen(s1) - i - 1];
+		sret[i] = s1[strlen(s1) - i - 1];  
 	sret[i] = '\0';
 	return sret;
 }
